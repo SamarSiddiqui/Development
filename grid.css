@@ -1,0 +1,54 @@
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container {
+display: grid;
+grid-template-columns: 250px auto;
+grid-template-rows: 44px auto;
+grid-template-areas:
+"header header"
+"sidepanel main";
+height: 100vh;
+}
+  
+.header {
+grid-area: header;
+background-color: #A82222;
+color: #fff;
+padding: 10px;
+}
+  
+.sidepanel {
+grid-area: sidepanel;
+background-color: #BD8A8A;
+padding-left: 10px;
+overflow: auto;
+}
+  
+.main {
+grid-area: main;
+display: grid;
+grid-template-rows: 44px auto;
+}
+ 
+.toolbar {
+background-color: #C8C8C8;
+padding: 10px;
+}
+
+.canvas-parent{
+width: 100%;
+overflow: auto;
+background-color: transparent;
+}
+
+.canvas{
+top: 0px;
+width: 200%;
+height: 110%;
+background-color: #f4e8e8;
+}
+
